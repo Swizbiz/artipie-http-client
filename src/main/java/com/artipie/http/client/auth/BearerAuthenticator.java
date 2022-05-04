@@ -23,15 +23,15 @@
  */
 package com.artipie.http.client.auth;
 
-import com.artipie.asto.Content;
-import com.artipie.asto.ext.PublisherAs;
 import com.artipie.http.Headers;
 import com.artipie.http.client.ClientSlices;
 import com.artipie.http.client.UriClientSlice;
+import com.artipie.http.client.misc.PublisherAs;
 import com.artipie.http.headers.Authorization;
 import com.artipie.http.headers.WwwAuthenticate;
 import com.artipie.http.rq.RequestLine;
 import com.artipie.http.rq.RqMethod;
+import io.reactivex.Flowable;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.concurrent.CompletableFuture;
@@ -103,7 +103,7 @@ public final class BearerAuthenticator implements Authenticator {
         return new AuthClientSlice(new UriClientSlice(this.client, realm), this.auth).response(
             new RequestLine(RqMethod.GET, String.format("?%s", query)).toString(),
             Headers.EMPTY,
-            Content.EMPTY
+            Flowable.empty()
         ).send(
             (status, headers, body) -> new PublisherAs(body).bytes()
                 .thenApply(this.format::token)
