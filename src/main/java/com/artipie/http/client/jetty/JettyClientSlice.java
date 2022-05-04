@@ -23,11 +23,11 @@
  */
 package com.artipie.http.client.jetty;
 
-import com.artipie.asto.ext.PublisherAs;
 import com.artipie.http.Headers;
 import com.artipie.http.Response;
 import com.artipie.http.Slice;
 import com.artipie.http.async.AsyncResponse;
+import com.artipie.http.client.misc.PublisherAs;
 import com.artipie.http.headers.Header;
 import com.artipie.http.rq.RequestLineFrom;
 import com.artipie.http.rs.RsFull;
