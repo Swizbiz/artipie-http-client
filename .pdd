@@ -3,6 +3,7 @@
 --exclude logo.png
 --exclude target/**/*
 --exclude src/main/resources/images/**/*
+--exclude src/test/resources/*
 --exclude .idea/**/*
 --rule min-words:15
 --rule min-estimate:15

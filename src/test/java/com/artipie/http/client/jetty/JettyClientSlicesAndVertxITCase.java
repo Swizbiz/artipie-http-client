@@ -105,7 +105,7 @@ final class JettyClientSlicesAndVertxITCase {
         );
         MatcherAssert.assertThat(
             "Response body is some html",
-            new TextOf(con.getInputStream()).asString(),
+            new TextOf(con.getInputStream()).toString(),
             Matchers.startsWith("<!DOCTYPE html>")
         );
         con.disconnect();

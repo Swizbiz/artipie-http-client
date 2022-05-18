@@ -109,7 +109,7 @@ final class JettyClientSliceLeakTest {
                 }
             );
             try {
-                sent.toCompletableFuture().get(1, TimeUnit.SECONDS);
+                sent.toCompletableFuture().get(2, TimeUnit.SECONDS);
             } catch (final ExecutionException expected) {
             }
         }
