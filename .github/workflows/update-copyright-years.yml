@@ -7,7 +7,18 @@ name: Update copyright year in license file and license header of all files
 on: workflow_dispatch
 
 jobs:
-  run:
+  license:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: FantasticFiasco/action-update-license-year@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  source:
+    needs: license
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
