@@ -1,10 +1,21 @@
 <img src="https://www.artipie.com/logo.svg" width="64px" height="64px"/>
 
-[![Maven build](https://github.com/artipie/http-client/workflows/Maven%20Build/badge.svg)](https://github.com/artipie/http-client/actions?query=workflow%3A%22Maven+Build%22)
+[![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
+[![DevOps By Rultor.com](http://www.rultor.com/b/artipie/http-client)](http://www.rultor.com/p/artipie/http)
+[![We recommend IntelliJ IDEA](https://www.elegantobjects.org/intellij-idea.svg)](https://www.jetbrains.com/idea/)
+
+[![Javadoc](http://www.javadoc.io/badge/com.artipie/http-client.svg)](http://www.javadoc.io/doc/com.artipie/http-client)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/artipie/http-client/blob/master/LICENSE.txt)
+[![codecov](https://codecov.io/gh/artipie/http-client/branch/master/graph/badge.svg)](https://codecov.io/gh/artipie/http-client)
+[![Hits-of-Code](https://hitsofcode.com/github/artipie/http-client)](https://hitsofcode.com/view/github/artipie/http-client)
+[![Maven Central](https://img.shields.io/maven-central/v/com.artipie/http-client.svg)](https://maven-badges.herokuapp.com/maven-central/com.artipie/http-client)
 [![PDD status](http://www.0pdd.com/svg?name=artipie/http-client)](http://www.0pdd.com/p?name=artipie/http-client)
-[![License](https://img.shields.io/github/license/artipie/http-client.svg?style=flat-square)](https://github.com/artipie/http-client/blob/master/LICENSE)
 
 Artipie HTTP client implementation.
+
+If you have any question or suggestions, do not hesitate to create an issue or contact us in
+[Telegram](https://t.me/artipie).  
+Artipie [roadmap](https://github.com/orgs/artipie/projects/3).
 
 To install add this dependency to `pom.xml` file:
 ```xml
@@ -75,6 +86,8 @@ Slice authenticated = new AuthClientSlice(
 ```
 
 ## How to contribute
+
+Please read [contributing rules](https://github.com/artipie/artipie/blob/master/CONTRIBUTING.md).
 
 Fork repository, make changes, send us a pull request. We will review
 your changes and apply them to the `master` branch shortly, provided
