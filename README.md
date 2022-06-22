@@ -1,4 +1,6 @@
-<img src="https://www.artipie.com/logo.svg" width="64px" height="64px"/>
+<a href="http://artipie.com"><img src="https://www.artipie.com/logo.svg" width="64px" height="64px"/></a>
+
+[![Join our Telegramm group](https://img.shields.io/badge/Join%20us-Telegram-blue?&logo=telegram&?link=http://right&link=http://t.me/artipie)](http://t.me/artipie)
 
 [![EO principles respected here](https://www.elegantobjects.org/badge.svg)](https://www.elegantobjects.org)
 [![DevOps By Rultor.com](http://www.rultor.com/b/artipie/http-client)](http://www.rultor.com/p/artipie/http)
@@ -13,7 +15,7 @@
 
 Artipie HTTP client implementation.
 
-If you have any question or suggestions, do not hesitate to create an issue or contact us in
+If you have any question or suggestions, do not hesitate to [create an issue](https://github.com/artipie/http-client/issues/new) or contact us in
 [Telegram](https://t.me/artipie).  
 Artipie [roadmap](https://github.com/orgs/artipie/projects/3).
 
