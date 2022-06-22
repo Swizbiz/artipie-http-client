@@ -29,12 +29,12 @@ To install add this dependency to `pom.xml` file:
 Artipie [HTTP module](https://github.com/artipie/http) provides HTTP abstractions. Client module is targeted to implement
 HTTP client on top of these abstractions.
 
-- `ClientSlice` - is an `Slice` that sends request to remote TCP endpoint and returns
+- `ClientSlice` - is a `Slice` that sends request to remote TCP endpoint and returns
 `Response`. In that sense it is similar to an HTTP connection.
 - `ClientSlices` - collection of slices that pools resources
 and builds `ClientSlice` by specified protocol (HTTP or HTTPS), host and port.
 
-`ClientSlices` is entry point for usage of this module:
+`ClientSlices` is an entry point for usage of this module:
 
 ```java
 ClientSlices slices = new JettyClientSlices();
