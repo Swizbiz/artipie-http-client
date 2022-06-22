@@ -26,10 +26,10 @@ To install add this dependency to `pom.xml` file:
 </dependency>
 ```
 
-Artipie HTTP module provides HTTP abstractions. Client module targeted to implement
+Artipie [HTTP module](https://github.com/artipie/http) provides HTTP abstractions. Client module is targeted to implement
 HTTP client on top of these abstractions.
 
-- `ClientSlice` - is a `Slice` that sends request to remote TCP endpoint and returns
+- `ClientSlice` - is an `Slice` that sends request to remote TCP endpoint and returns
 `Response`. In that sense it is similar to an HTTP connection.
 - `ClientSlices` - collection of slices that pools resources
 and builds `ClientSlice` by specified protocol (HTTP or HTTPS), host and port.
