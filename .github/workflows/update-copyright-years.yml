@@ -1,10 +1,8 @@
 name: Update copyright year
 
-#on:
-#  schedule:
-#  - cron: '0 1 22 * *'
-
-on: workflow_dispatch
+on:
+  schedule:
+  - cron: '0 1 22 * *'
 
 jobs:
   license:
@@ -17,7 +15,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: LICENSE*
-          commitTitle: "chore: update year in license file"
+          commitTitle: "chore: update year in LICENSE file"
 
   source:
     needs: license
